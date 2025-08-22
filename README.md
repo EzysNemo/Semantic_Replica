@@ -2,7 +2,7 @@
 
 Introduction of Project
 
-## Dataset
+## Semantic_Replica
 
 ### Dataset
 The original [Replica dataset](https://github.com/facebookresearch/Replica-Dataset) provides data for static indoor scenes. However, real-world indoor environments change over time. To address this, we extend the Replica dataset by introducing variations in objects within the scenes.
