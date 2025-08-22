@@ -50,6 +50,4 @@ gdown 1eVPZ00ayYmfL-RWtOyLlkv7y6cGO8UcZ -O data.zip
 unzip data.zip
 ```
 ## License
-The data are released under the MIT license.
-
 Copyright (c) 2025 SeryeongKim
