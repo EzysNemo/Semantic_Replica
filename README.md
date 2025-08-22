@@ -1,10 +1,5 @@
 # Semantic_Replica
 
-Introduction of Project
-
-## Semantic_Replica
-
-### Dataset
 The original [Replica dataset](https://github.com/facebookresearch/Replica-Dataset) provides data for static indoor scenes. However, real-world indoor environments change over time. To address this, we extend the Replica dataset by introducing variations in objects within the scenes.
 
 <p align="center">
@@ -14,6 +9,8 @@ The original [Replica dataset](https://github.com/facebookresearch/Replica-Datas
 To represent relationships between objects in the modified scenes, we adapt the concept of [Scene Graph](https://arxiv.org/pdf/2101.06894). The scene graphs are obtained by applying the [3DSSG](https://github.com/ShunChengWu/3DSSG) network, which performs inference on learned 3D Gaussians from the images included in this dataset. The extracted graphs are then structured to match the input format required by [GAT](https://github.com/codexxxl/GraphVQA).
 
 Furthermore, we generate question-answer pairs for the modified scenes, thereby providing a Replica-based dataset that can also be directly used as input to the [GAT](https://github.com/codexxxl/GraphVQA).
+
+## Semantic_Replica
 
 ### Dataset Format
 Each custom scene contains the following assets:
