@@ -44,10 +44,9 @@ Here is the list of modified scenes included in this dataset. The details of eac
 | `office3_5obj_addition` | In `office3`, a blue chair of the center has been moved to right. And a white vase, black pot, white table, and monitor have been added near the chairs. |
 
 ## Download
-
 ```bash
 pip install gdown
-gdown 1G9ar9ZBQ5r_Cpl6UIhuzqSf4W8vfdiuC -O data.zip
+gdown 1eVPZ00ayYmfL-RWtOyLlkv7y6cGO8UcZ -O data.zip
 unzip data.zip
 ```
 ## License
