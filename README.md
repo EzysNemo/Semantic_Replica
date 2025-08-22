@@ -50,4 +50,4 @@ gdown 1eVPZ00ayYmfL-RWtOyLlkv7y6cGO8UcZ -O data.zip
 unzip data.zip
 ```
 ## License
-Copyright (c) 2025 SeryeongKim
+Copyright (c) 2025 KAIST SSL team-sr
