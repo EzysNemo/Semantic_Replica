@@ -56,4 +56,4 @@ unzip data.zip
 ## License
 The data are released under the MIT license.
 
-Copyright (c) 2025 jhub1269
+Copyright (c) 2025 SeryeongKim
